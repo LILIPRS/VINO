@@ -1,0 +1,129 @@
+/* Appliquer une réinitialisation basique pour uniformiser le rendu sur tous les navigateurs */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Calibri', light; /* Une police élégante et lisible */
+  color: #333333; /* Couleur de texte standard */
+  background-color: #FAF0E6; /* Une couleur de fond beige clair */
+  line-height: 1.6; /* Espacement entre les lignes pour une meilleure lisibilité */
+  font-size: 21px
+}
+
+header {
+  background-image: url("images/Vins.jpeg"); 
+  background-size: cover;
+  background-position: center;
+  color: #FFFFFF;
+  padding: 400px;
+  text-align: center;
+}
+
+nav {
+  background-color: #556B2F; /* Un vert foncé pour la navigation */
+  padding: 0.5rem 0;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center; /* Centrer les éléments de navigation horizontalement */
+}
+
+nav ul li {
+  padding: 0 2rem;
+}
+
+nav ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: #EEE8AA; /* Une couleur de surbrillance en passant la souris */
+}
+
+
+.vin-rouge {
+  width: 200px;
+}
+
+.container {
+  max-width: 1100px; /* Largeur maximale du conteneur pour une bonne lisibilité */
+  margin: auto; /* Centrer le conteneur */
+  padding: 2rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+section h2 {
+  margin-bottom: 1rem;
+  color: #8B0000; /* Réutiliser la couleur du header pour les titres de section */
+  font-size: 2rem;
+}
+
+footer {
+  background-color: #333333;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 1rem 0;
+  position: relative; /* Pour fixer éventuellement le footer en bas de la page */
+  bottom: 0;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column; /* Empiler les éléments de navigation verticalement sur les écrans plus petits */
+  }
+
+  nav ul li {
+    padding: 0.5rem 0;
+  }
+
+  .container {
+    padding: 1rem;
+  }
+
+  header {
+    background-color: #7b2b3b; /* Bordeaux color */
+    color: #fff;
+    text-align: center;
+  }
+  nav {
+    background-color: #4a6f47; /* Vine green */
+    padding: 10px 0;
+  }
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  nav ul li {
+    margin: 0 15px;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 15px;
+  }
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
